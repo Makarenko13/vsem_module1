@@ -20,7 +20,6 @@ public class Palindrome {
         for (int i = 0; i < firstSentence.length(); i++) {
             if(firstSentence.charAt(i)
                     != firstSentence.charAt(firstSentence.length() -1 -i )){
-
                 result = false;
                 break;
             }
@@ -34,11 +33,9 @@ public class Palindrome {
         secondSentence = secondSentence.replaceAll("[^A-Za-zA-Ая-я]", "");
         secondSentence = secondSentence.toLowerCase();
 
-
         String reversed = "";
         for (int i = secondSentence.length() - 1; i >= 0; i--) {
             reversed += secondSentence.charAt(i);
-
         }
         return reversed.equals(secondSentence);
     }
