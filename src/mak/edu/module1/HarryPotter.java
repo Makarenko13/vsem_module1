@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.sql.Array;
 import java.sql.SQLOutput;
 
-public class HarryPotter1 {
+public class HarryPotter {
 
 
     public static void main(String[] args) throws IOException {
