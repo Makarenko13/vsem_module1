@@ -11,7 +11,8 @@ import java.nio.file.Paths;
 import java.sql.Array;
 import java.sql.SQLOutput;
 
-public class HarryPotter {
+public class HarryPotter1 {
+
 
     public static void main(String[] args) throws IOException {
 
@@ -27,7 +28,6 @@ public class HarryPotter {
 
         String[] words = content.split(" ");
         System.out.println(words.length);
-
 
         for (int i = 0; i < 100; i++) {
                }
