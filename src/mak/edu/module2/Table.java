@@ -6,7 +6,7 @@ package mak.edu.module2;/*
   @since 23.03.2021 - 23.24
 */
 
-import java.util.Objects;
+/*import java.util.Objects;
 
 public class Table extends Rectangle{
     private String material;
@@ -113,3 +113,4 @@ public class Table extends Rectangle{
         return Objects.hash(super.hashCode(), getMaterial(), getColor(), getIsHavingDrawers());
     }
 }
+*/
