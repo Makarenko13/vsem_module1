@@ -7,5 +7,20 @@ package mak.edu.Final_course;/*
 */
 
 public class Duplicates {
-
+    public  static  boolean hasDuplicates(int[] array){
+            Arrays.sort(array);
+            List inputList = Arrays.asList(input);
+            Set inputSet = new HashSet(inputList);
+            if(inputSet.size()< inputList.size())
+                return true;
+        }
+        return false;
+    }
+        public static void main(String[] args) {
+            int[] array = {1,5,3,6,2,9,33,21};
+            System.out.println(hasDuplicates(array));  // false
+            array[5] = 1;
+            System.out.println(hasDuplicates(array)); // true
+        }
+    }
 }

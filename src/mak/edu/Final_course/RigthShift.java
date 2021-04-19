@@ -7,8 +7,9 @@ package mak.edu.Final_course;/*
 */
 
 public class RigthShift {
-         public static void main(String[] args)
-        {
+
+    public static int[] rightShift(int[] array, int step){
+                {
             int[] shiftThis = {10, 20, 30, 40, 50};
 
             printResults(rightShift(rightShift, 2));
@@ -29,15 +30,15 @@ public class RigthShift {
                     ++startFrom;
                 }
             }
-            return result;
-        }
-
-        public static void printResults(int[] argArr)
-        {
-            for(int i = 0; i < argArr.length; ++i)
-            {
-                System.out.print(argArr[i] + " ");
-            }
-        }
+        return array;
     }
-0
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30};
+        System.out.println(Arrays.toString(rightShift(array, 1))); // [30, 10, 20]
+
+        int[] array2 = {10, 20, 30, 40, 50};
+        System.out.println(Arrays.toString(rightShift(array2, 2))); // [40, 50, 10, 20, 30]
+
+        System.out.println(Arrays.toString(rightShift(array2, 21))); // [50, 10, 20, 30, 40]
+    }
+}
